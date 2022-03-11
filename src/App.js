@@ -7,8 +7,14 @@ import './App.scss';
 function App() {
   return (
     <div className='app'>
-      <UserList />
-      <UserProfile name='Denisse' email='denisse@email.com' />
+      <UserList
+        dataSource='https://jsonplaceholder.typicode.com/users'
+      />
+      <UserProfile
+        name='Denisse'
+        email='denisse@email.com'
+        dataSource='https://jsonplaceholder.typicode.com/posts'
+      />
     </div>
   );
 }
